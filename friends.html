@@ -19,10 +19,64 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-battery-full"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link"
+      ><i class="fas fa-info-circle"></i> Friends' Names Display<i
+        class="fas fa-chevron-right fa-xs"
+      ></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://static01.nyt.com/images/2021/05/29/arts/cruella-anatomy1/cruella-anatomy1-mediumSquareAt3X.jpg"
+            class="user-component__avatar user-component__avater--xl"
+          />
+          <div class="user-compnent__text">
+            <h4 class="user-component__title">Cruella</h4>
+            <!--<h6 class="user-compnent__subtitle">Hello there!</h6>-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://static01.nyt.com/images/2021/05/29/arts/cruella-anatomy1/cruella-anatomy1-mediumSquareAt3X.jpg"
+              class="user-component__avatar user-component__avater--sm"
+            />
+            <div class="user-compnent__text">
+              <h4 class="user-component__title">Channel</h4>
+              <!--<h6 class="user-compnent__subtitle">Hello there!</h6>-->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
@@ -30,14 +84,18 @@
           <a class="nav__link" href="#"><i class="fas fa-user fa-2x"></i></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="far fa-comment fa-2x"></i></a>
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#"
-            ><i class="fas fa-ellipsis-h fa-2x"></i
+          <a class="nav__link" href="#">
+            <div class="nav-reddot"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
         </li>
       </ul>
