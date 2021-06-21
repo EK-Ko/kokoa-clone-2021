@@ -4,6 +4,7 @@
   padding: var(--horizontal-space);
   padding-top: 50px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -13,4 +14,97 @@
 
 .screen-header__icons span {
   margin-left: 25px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+}
+
+@keyframes expandSearch {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header .fa-search:hover {
+  will-change: transform;
+  animation: expandSearch 0.5s ease-in-out infinite;
+}
+
+@keyframes changeMusic {
+  0% {
+    color: none;
+  }
+  10% {
+    color: tomato;
+  }
+  20% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: skyblue;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: blueviolet;
+  }
+  80% {
+    color: violet;
+  }
+  90% {
+    color: teal;
+  }
+  100% {
+    color: none;
+  }
+}
+
+.screen-header .fa-music:hover {
+  animation: changeMusic 5s ease-in-out infinite;
+}
+
+@keyframes ringComment {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header .fa-comment-dots:hover {
+  will-change: transform;
+  animation: ringComment 0.3s ease-in-out infinite;
 }

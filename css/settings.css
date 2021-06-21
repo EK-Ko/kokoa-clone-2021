@@ -1,0 +1,75 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting i {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+
+@keyframes alterateHorn {
+  0% {
+    color: none;
+  }
+  50% {
+    color: tomato;
+  }
+  100% {
+    color: none;
+  }
+}
+
+.settings__setting-column .fa-bullhorn:hover {
+  will-change: transform;
+  animation: alterateHorn 0.5s ease-in-out infinite;
+}
+
+@keyframes alterateFlask {
+  0% {
+    color: none;
+    transform: none;
+  }
+  50% {
+    color: rgb(0, 179, 179);
+    transform: rotateY(180deg);
+  }
+  100% {
+    color: none;
+    transform: none;
+  }
+}
+
+.settings__setting-column .fa-flask:hover {
+  will-change: transform;
+  animation: alterateFlask 0.5s ease-in-out infinite;
+}
+
+@keyframes alterateInfo {
+  0% {
+    color: none;
+    transform: none;
+  }
+  50% {
+    color: indigo;
+    transform: rotateZ(360deg);
+  }
+  100% {
+    color: none;
+    transform: none;
+  }
+}
+
+.settings__setting-column .fa-info-circle:hover {
+  will-change: transform;
+  animation: alterateInfo 2s ease-in-out infinite;
+}
